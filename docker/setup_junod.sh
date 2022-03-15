@@ -39,7 +39,7 @@ if ! junod keys show validator $KEYRING; then
   # (optionally) add a few more genesis accounts
   for addr in "$@"; do
     echo $addr
-    junod add-genesis-account "$addr" "1000000000$STAKE,1000000000$FEE"
+    junod add-genesis-account "$addr" "15000000000$STAKE,150000000000$FEE"
   done
 
   # submit a genesis validator tx
